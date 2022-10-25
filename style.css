@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+}
+
+.p-2 {
+    padding: 0.2rem;
+}
+
+.p-5 {
+    padding: 0.5rem;
+}
+
+.py-5 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.my-2 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.3rem;
+}
+
+.mt-3 {
+    margin-top: 0.3rem;
+}
+
+.d-block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#app {
+    margin: 8px auto;
+    max-width: 380px;
+    border: solid 1px #7986cb;
+    border-radius: 4px;
+}
+
+header {
+    border-bottom: solid 1px #d5d8eb;
+}
+
+.movies {
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.movie {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    width: 178px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie h5 {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.movie h5::before {
+    content: '';
+    background-color: #ffb74d;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+}
+
+.item-field input {
+    border: solid 1px #7986cb;
+    padding: 5px 8px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.item-field input:focus {
+    border: solid 1px #26418f;
+}
